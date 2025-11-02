@@ -76,9 +76,23 @@
         </dependency>
     </dependencies>
 
-    <!-- Dependabot fixes -->
+    <!-- Dependabot and version conflicts -->
     <dependencyManagement>
         <dependencies>
+            <!-- Conflicts within Zerodha release so check while updating Zerodha new version -->
+            <!-- https://mvnrepository.com/artifact/com.squareup.okio/okio -->
+            <dependency>
+                <groupId>com.squareup.okio</groupId>
+                <artifactId>okio</artifactId>
+                <version>3.16.2</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.squareup.okio/okio-jvm -->
+            <dependency>
+                <groupId>com.squareup.okio</groupId>
+                <artifactId>okio-jvm</artifactId>
+                <version>3.16.2</version>
+                <scope>runtime</scope>
+            </dependency>
             <!-- Checkmarx fix and its part of Zerodha release so check while updating Zerodha new version -->
             <!-- https://mvnrepository.com/artifact/org.json/json -->
             <dependency>
@@ -88,7 +102,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <!-- End - Dependabot fixes -->
+    <!-- End - Dependabot and version conflicts -->
 
     <build>
         <plugins>
