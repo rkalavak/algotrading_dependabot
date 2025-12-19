@@ -93,19 +93,19 @@
                 <version>3.16.4</version>
                 <scope>runtime</scope>
             </dependency>
-            <!-- Checkmarx fix and its part of Zerodha release so check while updating Zerodha new version -->
-            <!-- https://mvnrepository.com/artifact/org.json/json -->
+            <!--&lt;!&ndash; Checkmarx fix and its part of Zerodha release so check while updating Zerodha new version &ndash;&gt;
+            &lt;!&ndash; https://mvnrepository.com/artifact/org.json/json &ndash;&gt;
             <dependency>
                 <groupId>org.json</groupId>
                 <artifactId>json</artifactId>
                 <version>20250517</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
+            &lt;!&ndash; https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp &ndash;&gt;
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
                 <artifactId>okhttp</artifactId>
                 <version>4.12.0</version>
-            </dependency>
+            </dependency>-->
         </dependencies>
     </dependencyManagement>
     <!-- End - Dependabot and version conflicts -->
